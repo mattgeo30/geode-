@@ -1,0 +1,81 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/geode/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/geode",
+        "index": "apps/geode/src/index.html",
+        "baseHref": "/",
+        "main": "apps/geode/src/main.tsx",
+        "polyfills": "apps/geode/src/polyfills.ts",
+        "tsConfig": "apps/geode/tsconfig.app.json",
+        "assets": ["apps/geode/src/favicon.ico", "apps/geode/src/assets"],
+        "styles": ["apps/geode/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/geode/src/environments/environment.ts",
+              "with": "apps/geode/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "geode:build",
+        "hmr": true,
+        "proxyConfig": "apps/geode/proxy.conf.json"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "geode:build:development"
+        },
+        "production": {
+          "buildTarget": "geode:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/geode/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/geode"],
+      "options": {
+        "jestConfig": "apps/geode/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
