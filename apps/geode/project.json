@@ -75,6 +75,13 @@
         "jestConfig": "apps/geode/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "builder": "@netlify-builder/deploy:deploy",
+      "options": {
+        "outputPath": "dist/apps/geode",
+        "siteId": "c6461d26-d325-4bdb-8244-5d06d264f9e3"
+      }
     }
   },
   "tags": []

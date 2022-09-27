@@ -5,12 +5,11 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test",
-    "build:api": "npm --prefix api run build",
-    "build:geode": "npx nx serve geode"
+    "test": "nx test"
   },
   "private": true,
   "dependencies": {
+    "@netlify-builder/deploy": "^5.0.0",
     "core-js": "^3.6.5",
     "express": "^4.18.1",
     "react": "18.2.0",
