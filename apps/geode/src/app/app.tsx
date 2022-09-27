@@ -6,7 +6,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 import { Storybook } from '@geode/storybook';
 
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
+  const [m, setMessage] = useState<Message>({ message: 'Under construction...' });
 
   useEffect(() => {
     fetch('/api')
@@ -29,10 +29,7 @@ export const App = () => {
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
+      {/* <div role="navigation">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -64,7 +61,7 @@ export const App = () => {
             </div>
           }
         />
-      </Routes>
+      </Routes> */}
       {/* END: routes */}
     </>
   );

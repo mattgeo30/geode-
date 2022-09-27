@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "build:api": "npm --prefix api run build",
+    "build:geode": "npm --prefix geode run build"
   },
   "private": true,
   "dependencies": {
