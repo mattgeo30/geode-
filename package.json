@@ -7,7 +7,7 @@
     "build": "nx build",
     "test": "nx test",
     "build:api": "npm --prefix api run build",
-    "build:geode": "npm --prefix geode run build"
+    "build:geode": "npx nx serve geode"
   },
   "private": true,
   "dependencies": {
