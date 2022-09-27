@@ -5,6 +5,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "geode": "apps/geode",
-    "geode-e2e": "apps/geode-e2e"
+    "geode-e2e": "apps/geode-e2e",
+    "storybook": "libs/storybook"
   }
 }

@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@geode/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@geode/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@geode/storybook": ["libs/storybook/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
