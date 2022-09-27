@@ -20,7 +20,7 @@ export const App = () => {
         <h1>Welcome to geode!</h1>
         <img
           width="280"
-          src="hhttps://png2.cleanpng.com/sh/dceb1f60e69c1a6174365f8b647442ae/L0KzQYm3VMA6N5JAfZH0aYP2gLBuTfxmaZcyhNHwbz3lgrL1hL1xdJJzjJ98dHXwPbf2jPhiNWZme9Q5N0m8QbbphvM2NmE1UKsDNUO5QYa5U8I2PWIAS6M7Nj7zfri=/kisspng-leaf-logo-brand-plant-stem-folha-5acb07991ebfc5.008985361523255193126.png"
+          src="https://png2.cleanpng.com/sh/dceb1f60e69c1a6174365f8b647442ae/L0KzQYm3VMA6N5JAfZH0aYP2gLBuTfxmaZcyhNHwbz3lgrL1hL1xdJJzjJ98dHXwPbf2jPhiNWZme9Q5N0m8QbbphvM2NmE1UKsDNUO5QYa5U8I2PWIAS6M7Nj7zfri=/kisspng-leaf-logo-brand-plant-stem-folha-5acb07991ebfc5.008985361523255193126.png"
           alt="Hello"
         />
       </div>
